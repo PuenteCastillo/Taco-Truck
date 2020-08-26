@@ -1,0 +1,214 @@
+.vertical_divider_list{	
+    &.inner_spacing{
+		@include bp(lgmin) {
+			padding: rem-calc(70 0);
+		}		
+	}
+	.vertical_content_row{
+		&.text-center{
+			.vertical_content_col{
+				.vertical_content{
+					.vertical_content_title.underline_show:before{
+						left: 50%;
+						@include transform-translate-x(-50%);
+					}
+				}
+			}
+		}
+		.vertical_content_col{
+			padding-top: rem-calc(50);
+			padding-bottom: rem-calc(50);
+			margin-bottom: rem-calc(30);
+			@include bp(tabletmd) {
+				padding-top: rem-calc(30);
+				padding-bottom: rem-calc(30);
+			}
+			@include bp(tabletsm) {
+				border-top: solid rem-calc(1) #cdcdcd;				
+				margin-bottom: 0;
+			}
+			&:first-of-type{
+				border: none;
+				@include bp(tabletsm) {
+					padding-top: 0;
+				}
+			}
+			&:last-of-type{
+				@include bp(tabletsm) {
+					padding-bottom: 0;
+				}
+			}
+			.vertical_content{
+				.vertical_content_title{		
+					position: relative;
+					margin-bottom: rem-calc(27);
+					&>*{
+						margin-bottom: 0;
+					}
+					&.underline_show{
+						padding-bottom: rem-calc(15);
+						@include bp(tabletsm) {
+							padding-bottom: rem-calc(5);
+						}
+						&:before{
+							content: '';
+							display: inline-block;
+							border-bottom: solid rem-calc(2);
+							width: rem-calc(70);
+							height: rem-calc(2);
+							position: absolute;
+							bottom: 0;
+							left: 0;
+						}					
+					}
+					h5{
+						font-weight: $bold;
+						text-transform: uppercase;
+						letter-spacing: rem-calc(1);
+					}				
+				}
+				.datatime{					
+					font-weight: $bold;
+					span{
+						margin-right: rem-calc(30);						
+					}
+				}
+				p:last-of-type{
+					margin-bottom: 0;
+				}
+				p.datatime{
+					margin-bottom: rem-calc(22);
+				}
+				address{
+					strong{
+						color: $primary_color;
+					}
+					p:last-of-type{
+						margin-bottom: 0;
+					}
+				}
+				.morelink{					
+					font-weight: $normal;
+					text-transform: capitalize;
+					display: inline-block;
+					margin-top: rem-calc(10);
+				}
+			}
+		}
+		&.listcol_1{
+			.vertical_content_col{
+				&:last-of-type{
+					padding-top: 0;
+					padding-bottom: 0;
+					margin-bottom: 0;
+				}
+			}
+			.vertical_content{
+				margin-left: auto;
+				margin-right: auto;
+				@include bp(mdmin) {
+					max-width: 90%;
+				}
+				@include bp(tabletmd) {
+					padding-left: rem-calc(30);
+					padding-right: rem-calc(30);
+				}
+				@include bp(tabletsm) {
+					padding-left: rem-calc(15);
+					padding-right: rem-calc(15);
+				}
+			}
+		}
+		&.listcol_2{
+			.vertical_content{
+				margin-left: auto;
+				margin-right: auto;
+				@include bp(mdmin) {
+					max-width: 63%;
+				}
+				@include bp(tabletmd) {
+					padding-left: rem-calc(30);
+					padding-right: rem-calc(30);
+				}
+				@include bp(tabletsm) {
+					padding-left: rem-calc(15);
+					padding-right: rem-calc(15);
+				}
+			}
+		}
+		&.listcol_3{
+			@include bp(smmin) {
+				margin-left: -3%;
+				margin-right: -3%;
+			}
+			@include bp(lg) {			
+				margin-left: rem-calc(-30);
+				margin-right: rem-calc(-30);
+			}
+			@include bp(tabletsm) {		
+				margin-left: rem-calc(-15);
+				margin-right: rem-calc(-15);
+			}
+			.vertical_content_col{
+				@include bp(smmin) {
+					padding-left: 3%;
+					padding-right: 3%;
+				}
+				@include bp(lg) {
+					padding-left: rem-calc(30);
+					padding-right: rem-calc(30);
+				}
+				@include bp(tabletsm) {
+					padding: rem-calc(30 15);
+				}
+			}
+		}
+	}
+	&.dividers{
+		.vertical_content_row{
+			.vertical_content_col{
+				@include bp(smmin) {
+					border-left: solid rem-calc(1) #cdcdcd;							
+				}		
+				&:first-of-type{
+					border: none;
+				}
+			}
+			&.listcol_2{
+				@include bp(smmin) {
+					.vertical_content_col{
+						&:nth-child(odd){
+							border-left: none;
+						}
+					}
+				}
+			}
+			&.listcol_3{
+				.vertical_content_col{						
+					@include bp(mdmin) {
+						&:nth-child(3n+1){
+							border-left: none;
+						}
+					}
+					@include bp(tabletmd) {
+						&:nth-child(odd){
+							border-left: none;
+						}
+					}
+				}
+			}
+			&.listcol_3{
+				@include bp(smmin) {
+					margin-left: -5%;
+					margin-right: -5%;
+				}
+				.vertical_content_col{
+					@include bp(smmin) {
+						padding-left: 5%;
+						padding-right: 5%;
+					}						
+				}
+			}
+		}
+	}
+}

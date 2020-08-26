@@ -1,0 +1,185 @@
+.launchpad{
+    &.inner_spacing{
+		@include bp(lgmin) {
+			padding: rem-calc(92 0 88);
+		}
+	}	
+	.launchpad_title_box{
+		margin-bottom: rem-calc(50);
+		@include bp(tabletmd) {
+			margin-bottom: rem-calc(30);
+		}
+		@include bp(tabletsm) {
+			margin-bottom: rem-calc(20);
+		}
+		@include bp(sm) {
+			text-align: center;
+		}
+		h2{			
+			@include bp(lgmin) {				
+				line-height: rem-calc(48);
+				margin-bottom: rem-calc(10);
+			}
+		}
+		p{
+			color: $black;
+			line-height: rem-calc(18);
+			letter-spacing: rem-calc(0.7);
+		}
+	}
+	.launchpad_row{
+		justify-content: center;
+		@include bp(sm) {
+			text-align: center;
+		}
+		[class*='col-']{
+			margin-bottom: rem-calc(40);
+			@include bp(tabletmd) {
+				margin-bottom: rem-calc(30);
+			}
+			@include bp(tabletsm) {
+				margin-bottom: rem-calc(20);
+			}
+			@include bp(sm) {
+				margin-bottom: rem-calc(15);
+			}
+		}
+	}
+	.launchpad_inner_box{
+		h5{			
+			font-weight: $bold;
+			letter-spacing: rem-calc(0.7);	
+			margin-bottom: rem-calc(11);	
+			@include bp(lgmin) {
+				padding-right: rem-calc(20);
+			}		
+		}
+		.learn_more{
+			display: inline-block;
+			position: relative;
+			overflow: hidden;
+			.learn_more_text{
+				display: inline-block;
+				margin-right: rem-calc(5);
+				@include transition(.5s, all, ease);
+				position: relative;	
+				@include bp(smmin) {
+					margin-left: -83%;
+					opacity: 0;
+				}
+				i{
+					vertical-align: middle;
+				}
+			}			
+		}
+		&:hover, &:focus{
+			.learn_more{
+				.learn_more_text{
+					margin-left: 0;
+					opacity: 1;
+					@include bp(tabletsm) {
+						margin-right: rem-calc(10);
+					}					
+				}
+			}
+		}
+	}	
+}
+
+
+/* Style 1 */
+.launchpad.launchpad_style1{
+	&.inner_spacing{		
+		@include bp(lg) {
+			padding: rem-calc(60 0 40) !important;
+		}
+		@include bp(tabletmd) {
+			padding: rem-calc(50 0 20) !important;
+		}
+		@include bp(tabletsm) {
+			padding: rem-calc(40 0 20) !important;
+		}
+	}
+	.launchpad_title_box{
+		@include bp(mdmin) {
+			max-width: 65%;
+		}		
+	}	
+	.launchpad_inner_box{
+		border-top: solid rem-calc(1);
+		padding-top: rem-calc(20);	
+		@include bp(sm) {
+			padding-top: rem-calc(30);	
+		}	
+	}
+}
+
+/* Style 2 */
+.launchpad.launchpad_style2{
+	&.inner_spacing{
+		@include bp(lgmin) {
+			padding: rem-calc(63 0 42);
+		}		
+	}
+	.launchpad_title_box{
+		h2{
+			margin-bottom: 0;
+		}
+		p{			
+			font-size: rem-calc(20.75);
+			line-height: rem-calc(26);			
+		}
+	}
+	
+
+	.launchpad_row{	
+		[class*='col-']{
+			@include bp(sm) {
+				&:last-of-type{
+					margin-bottom: 0;
+					.launchpad_inner_box{
+						border-bottom: none;
+						padding-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+	.launchpad_inner_box{
+		text-align: center;
+		@include bp(sm) {
+			border-bottom: solid rem-calc(1) #e2e2e2;
+			padding-bottom: rem-calc(30);					
+		}
+		h5{
+			margin-bottom: rem-calc(6);
+		}
+		.launchpad_inner_circle{
+			@extend .bgimage;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: rem-calc(76);
+			height: rem-calc(76);
+			border-radius: 50%;
+			margin: rem-calc(0 0 13);
+			margin-left: auto;
+			margin-right: auto;
+			img{
+				max-height: rem-calc(40);
+				height: 100%;
+			}
+		}
+		.btn{
+			font-size: rem-calc(12);
+			line-height: rem-calc(16);
+			border-radius: rem-calc(6);			
+			text-transform: uppercase;
+			padding: rem-calc(7 15);
+		}		
+	}
+}
+
+
+
+

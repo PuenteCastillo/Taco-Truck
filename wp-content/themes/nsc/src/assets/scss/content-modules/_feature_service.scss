@@ -1,0 +1,128 @@
+.feature_service{
+	&.inner_spacing{
+		@include bp(lgmin) {
+			padding: rem-calc(70 0);
+		}
+	}
+	.feature_service_image{
+		@include bp(tabletmd) {
+			margin-bottom: rem-calc(30);
+		}
+		@include bp(tabletsm) {
+			margin-bottom: rem-calc(20);
+		}
+	}
+	.feature_service_content{
+		position: relative;
+		z-index: 1;
+		h4{			
+			@include bp(mdmin) {				
+				font-size: rem-calc(25);
+				line-height: rem-calc(28);
+			}
+		}
+		.app_title{		
+			display: flex;
+			@include bp(xsm) {
+				flex-wrap: wrap;
+				justify-content: center;
+				text-align: center;
+			}
+			.app_title_img{
+				width: 100%;
+	    		max-width: rem-calc(118);
+	    		margin-right: rem-calc(30);
+	    		@include bp(lg) {
+	    			margin-right: rem-calc(20);	    			
+	    			max-width: rem-calc(110);
+	    		}
+				@include bp(tabletsm) {
+					max-width: rem-calc(100);
+				}
+				@include bp(xsm) {
+					max-width: rem-calc(80);
+					margin-right: 0;
+				}
+			}
+			.app_title_text{
+				margin-bottom: rem-calc(8);
+				h5{
+					font-weight: $bold;
+					@include bp(mdmin) {
+						margin-bottom: rem-calc(18);
+					}
+				}				
+			}
+		}
+	}
+	@include bp(mdmin) {		
+		.row{
+			&.left{
+				.feature_service_image{
+					order: 1;
+				}
+				.feature_service_content{
+					order: 2;
+				}
+			}
+			&.right{
+				.feature_service_image{
+					order: 2;					
+				}
+				.feature_service_content{
+					order: 1;
+				}
+			}
+		}
+	}
+	&.sideimg_lg{
+		position: relative;
+		overflow: hidden;
+		.feature_service_image{			
+			img{
+				@include bp(mdmin) {				
+					max-width: none;
+					margin: rem-calc(-84 0 0 0);
+				}
+			}
+		}
+		.row{
+			.feature_service_image{
+				img{
+					@include bp(lg) {
+						max-width: rem-calc(800);
+					}
+					@include bp(tabletmd) {
+						max-width: 100%;
+					}
+				}
+			}
+		}
+		@include bp(mdmin) {
+			.row{
+				&.left{
+					.feature_service_image{
+						img{
+							float: left;
+							margin-left: -70%;
+						}
+					}
+				}
+				&.right{
+					.feature_service_image{
+						img{
+							float: right;
+							margin-right: -25%;					
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* For IE */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {	
+	.feature_service .feature_service_content .app_title .app_title_img	{ width: auto; }
+}
+

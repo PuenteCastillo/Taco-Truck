@@ -1,0 +1,183 @@
+/*************************
+Mixins
+*************************/
+
+/************ Placeholder ************/
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content};
+  :-moz-placeholder           {@content};
+  ::-moz-placeholder          {@content};
+  :-ms-input-placeholder      {@content};
+}
+
+/************ Transition *************/
+/*@include transition(.5s, all, ease);*/
+@mixin transition($element, $time, $transition-name) {
+	-webkit-transition: $element $time $transition-name;
+	-moz-transition: $element $time $transition-name;
+	-ms-transition: $element $time $transition-name;
+	-o-transition: $element $time $transition-name;
+	transition: $element $time $transition-name;
+}
+
+/************ Tranform Rotate *************/
+/*@include rotate(0deg);*/
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);    
+}
+
+/************ Tranform Translate both *************/
+/*@include transform-translate-xy(x, v);*/
+@mixin transform-translate-xy($valX,$valY) {
+	-webkit-transform: translate($valX,$valY);
+	-moz-transform: translate($valX,$valY);
+	-ms-transform: translate($valX,$valY);
+	-o-transform: translate($valX,$valY);
+	transform: translate($valX,$valY);		
+}
+
+/************ Tranform Translate Y *************/
+/*@include transform-translate-x(x);*/
+@mixin transform-translate-y($valY) {
+	-webkit-transform: translateY($valY);
+	-moz-transform: translateY($valY);
+	-ms-transform: translateY($valY);
+	-o-transform: translateY($valY);
+	transform: translateY($valY);
+}
+
+/************ Tranform Translate X *************/
+/*@include transform-translate-y(y);*/
+@mixin transform-translate-x($valX) {
+	-webkit-transform: translateX($valX);
+	-moz-transform: translateX($valX);
+	-ms-transform: translateX($valX);
+	-o-transform: translateX($valX);
+	transform: translateX($valX);
+}
+
+/************ Box shadow *************/
+/*@include box-shadow(1px, 1px, 5px, 0, rgba(0,0,0,0.5), inset);*/
+@mixin box-shadow($x, $y, $spread, $size, $color, $inset: '') {
+	-webkit-box-shadow: $x $y $spread $size $color #{$inset};
+	-moz-box-shadow: $x $y $spread $size $color #{$inset};
+	-ms-box-shadow: $x $y $spread $size $color #{$inset};
+	-o-box-shadow: $x $y $spread $size $color #{$inset};
+	box-shadow: $x $y $spread $size $color #{$inset};
+}
+
+
+/************ Gradient Horizontal *************/
+/*
+background: @include filter-gradient(#f7941e, #f7a61e, horizontal);
+background: @include background-image(linear-gradient(left, #f7941e 0%, #f7a61e 100%));
+*/
+@mixin gradient-horizontal($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // Safari 5.1-6, Chrome 10+
+  background-image: -o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // Opera 12
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); // IE9 and down
+  background-repeat: repeat-x;
+}
+
+
+
+
+
+
+/************ Breakpoints *************/
+@mixin bp($point) {
+	@if $point == xxsm {
+		@media (max-width: 400px) { 
+			@content;
+		}		
+	} @else if $point == xsm {
+		@media (max-width: 479px) {
+			@content;
+		}
+	} @else if $point == sm {
+		@media (max-width: 575px) {
+			@content;
+		}
+	} @else if $point == tabletsm {
+		@media (max-width: 767px) {
+			@content;
+		}
+	} @else if $point == tablet {
+		@media (max-width: 768px) {
+			@content;
+		}
+	} @else if $point == tabletmd {
+		@media (max-width: 991px) {
+			@content;
+		}
+	} @else if $point == tabletXl {
+		@media (max-width: 1023px) {
+			@content;
+		}
+	} @else if $point == lg {
+		@media (max-width: 1199px) {
+			@content;
+		}
+	} @else if $point == xl {
+		@media (max-width: 1366px) {
+			@content;
+		}
+	} @else if $point == xxl {
+		@media (max-width: 1600px) {
+			@content;
+		}	
+	} @else if $point == xxlg {
+		@media (max-width: 1920px) {
+			@content;
+		}
+	} @else if $point == xxxlg {
+		@media (max-width: 2560px) {
+			@content;
+		}		
+
+
+	} @else if $point == xxsmmin {
+		@media (min-width: 401px) {
+			@content;
+		}
+	} @else if $point == xsmmin {
+		@media (min-width: 576px) {
+			@content;
+		}		
+	} @else if $point == smmin {
+		@media (min-width: 768px) {
+			@content;
+		}	
+	} @else if $point == mdmin {
+		@media (min-width: 992px) {
+			@content;
+		}
+	} @else if $point == lgmin {
+		@media (min-width: 1201px) {
+			@content;
+		}
+	} @else if $point == xlmin {
+		@media (min-width: 1366px) {
+			@content;
+		}	
+	} @else if $point == xxlmin {
+		@media (min-width: 1921px) {
+			@content;
+		}
+	} @else if $point == lg_mdmin {
+		@media all and (min-width: 992px) and (max-width: 1199px) {
+			@content;
+		}
+	} 
+	
+	@else if $point == height_bp {
+		@media (max-height: 700px) {
+			@content;
+		}
+	} 
+}

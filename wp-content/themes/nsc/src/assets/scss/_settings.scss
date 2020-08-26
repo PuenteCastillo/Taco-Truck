@@ -1,0 +1,123 @@
+//  SASS settings.
+//  Based on sass for Sites v6.4.3
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//   1. Global
+//   2. Breakpoints
+//   3. The Grid
+//   4. Base Typography
+//   5. Typography Helpers
+//   6. Abide
+//   7. Accordion
+//   8. Accordion Menu
+//   9. Badge
+//  10. Breadcrumbs
+//  11. Button
+//  12. Button Group
+//  13. Callout
+//  14. Card
+//  15. Close Button
+//  16. Drilldown
+//  17. Dropdown
+//  18. Dropdown Menu
+//  19. Flexbox Utilities
+//  20. Forms
+//  21. Label
+//  22. Media Object
+//  23. Menu
+//  24. Meter
+//  25. Off-canvas
+//  26. Orbit
+//  27. Pagination
+//  28. Progress Bar
+//  29. Prototype Arrow
+//  30. Prototype Border-Box
+//  31. Prototype Border-None
+//  32. Prototype Bordered
+//  33. Prototype Display
+//  34. Prototype Font-Styling
+//  35. Prototype List-Style-Type
+//  36. Prototype Overflow
+//  37. Prototype Position
+//  38. Prototype Rounded
+//  39. Prototype Separator
+//  40. Prototype Shadow
+//  41. Prototype Sizing
+//  42. Prototype Spacing
+//  43. Prototype Text-Decoration
+//  44. Prototype Text-Transformation
+//  45. Prototype Text-Utilities
+//  46. Responsive Embed
+//  47. Reveal
+//  48. Slider
+//  49. Switch
+//  50. Table
+//  51. Tabs
+//  52. Thumbnail
+//  53. Title Bar
+//  54. Tooltip
+//  55. Top Bar
+//  56. Xy Grid
+
+//@import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import 'util/util'; 
+@import 'global/colors';
+
+// 1. Global
+// ---------
+
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #fefefe;
+$body-font-color: $black;
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+$global-radius: 0;
+
+
+$grid-row-width: 100%;
+
+// 50. Table
+// ---------
+
+$table-background: $white;
+$table-color-scale: 5%;
+$table-border: 1px solid smart-scale($table-background, $table-color-scale);
+$table-padding: rem-calc(8 10 10);
+$table-hover-scale: 2%;
+$table-row-hover: darken($table-background, $table-hover-scale);
+$table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
+$table-is-striped: true;
+$table-striped-background: smart-scale($table-background, $table-color-scale);
+$table-stripe: even;
+$table-head-background: smart-scale($table-background, $table-color-scale / 2);
+$table-head-row-hover: darken($table-head-background, $table-hover-scale);
+$table-foot-background: smart-scale($table-background, $table-color-scale);
+$table-foot-row-hover: darken($table-foot-background, $table-hover-scale);
+$table-head-font-color: $body-font-color;
+$table-foot-font-color: $body-font-color;
+$show-header-for-stacked: false;
+$table-stack-breakpoint: medium;
+
+
+$has-tip-cursor: help;
+$has-tip-font-weight: $global-weight-bold;
+$has-tip-border-bottom: dotted 1px $dark-gray;
+$tooltip-background-color: $black;
+$tooltip-color: $white;
+$tooltip-padding: 0.75rem;
+$tooltip-max-width: 10rem;
+//$tooltip-font-size: $small-font-size;
+$tooltip-pip-width: 0.75rem;
+$tooltip-pip-height: $tooltip-pip-width * 0.866;
+$tooltip-radius: $global-radius;
+
+
+
+
+
+

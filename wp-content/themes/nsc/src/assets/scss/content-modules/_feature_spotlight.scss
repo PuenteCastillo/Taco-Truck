@@ -1,0 +1,42 @@
+.feature_spotlight{
+    &.inner_spacing{
+		@include bp(lgmin) {
+			padding: rem-calc(70 0);
+		}		
+	}
+	.spotlight_row{		
+		@include bp(xxsmmin) {
+			margin-left: rem-calc(-7.5);
+			margin-right: rem-calc(-7.5);			
+		}
+		[class*='col-']{
+			@include bp(xxsmmin) {
+				padding-left: rem-calc(7.5);
+				padding-right: rem-calc(7.5);				
+			}
+			@include bp(xxsm) {
+				flex: 0 0 100%;
+    			max-width: 100%;
+			}
+		}
+	}
+	.spotlight_col{
+		margin-bottom: rem-calc(15);
+		.spotlight_col_bg{
+			@extend .bgimage;			
+			padding-bottom: 64.3%;
+		}
+		.spotlight_col_caption{
+			padding: rem-calc(20 23 0);
+			@include bp(tabletsm) {
+				padding: rem-calc(15 15 0);
+			}
+			.subheading{
+				font-size: rem-calc(12);
+				line-height: rem-calc(16);
+				font-weight: $bold;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

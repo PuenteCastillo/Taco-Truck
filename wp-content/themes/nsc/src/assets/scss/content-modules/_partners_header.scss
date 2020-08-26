@@ -1,0 +1,98 @@
+.partners_header{	
+    color: $white;
+	text-align: center;
+	overflow: hidden;
+	.partners_header_top{
+		@extend .bgimage;
+    	transform: skewY(-4deg);
+    	transform-origin: left;
+		display: flex;
+		align-items: flex-end;				
+		height: calc(100vh - 93px);
+    	.container{
+    		.partners_header_top_inner{
+    			transform: skewY(4deg);
+    			/*@include bp(tabletmd) {
+    				min-height: rem-calc(700);
+    			}
+    			@include bp(tabletsm) {
+    				min-height: rem-calc(400);
+    			}*/
+    			.row{
+    				.partners_header_col{
+    					padding-top: rem-calc(100);
+    					margin-bottom: rem-calc(-186);
+    					@include bp(tabletmd) {
+    						margin-bottom: rem-calc(-160);
+    					}
+						@include bp(tabletsm) {
+							margin-bottom: rem-calc(-140);
+						}
+    					.module_title{    						
+	    					h2{
+								letter-spacing: rem-calc(0.5);
+	    					}
+    					}
+    				}
+    			}
+    		}
+    	}
+	}
+	.partners_header_bottom{
+		background-color: $white;
+		padding-top: rem-calc(133);
+		padding-bottom: rem-calc(50);
+		@include bp(tabletmd) {
+			padding-top: rem-calc(120);
+			padding-bottom: rem-calc(40);
+		}
+		@include bp(tabletsm) {
+			padding-top: rem-calc(110);
+			padding-bottom: rem-calc(30);
+		}
+		.partners_logo{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin-left: 0;
+			padding: 0 4%;
+			li{
+				width: 20%;
+				padding-left: 0;
+				position: relative;
+				margin-top: rem-calc(15);
+				margin-bottom: rem-calc(15);
+				@include bp(lg) {
+					width: 25%;
+				}
+				@include bp(tabletmd) {
+					width: 33.333%;
+				}
+				@include bp(sm) {
+					width: 50%;
+				}
+				@include bp(xsm) {
+					width: 100%;
+					&:last-of-type{
+                        margin-bottom: 0;
+                    }
+
+				}
+				&:before{
+					display: none;
+				}
+				img{
+					-webkit-filter: grayscale(1);
+  					filter: grayscale(1);
+  					@include transition(.5s, all, ease);
+				}
+				&:hover{
+					img{
+						filter: inherit;
+					}
+				}
+			}
+		}
+	}
+}

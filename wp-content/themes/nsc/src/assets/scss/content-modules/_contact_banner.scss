@@ -1,0 +1,146 @@
+.contact_banner{
+    padding-bottom: rem-calc(80);
+    @include bp(tabletmd) {
+        padding-bottom: rem-calc(60);        
+    }
+    @include bp(tabletsm) {
+        padding-bottom: rem-calc(40);
+    }
+	.contact_banner_inner{
+		position: relative;
+	    overflow: hidden; 
+	    height: rem-calc(400);
+        @include bp(tabletsm) {
+            height: rem-calc(300);
+        }
+	    &.inner_spacing{
+            padding-top: 0;
+			@include bp(lgmin) {
+				padding: rem-calc(70 0);
+			}		
+		}		
+		.map_bg{
+	        @extend .bgimage;        
+	        position: absolute;            
+	        top: 0;
+	        left: 0;
+	        width: 100%;
+	        height: 100%;
+            &.skew{        
+                &.skew_left{
+                    transform: skewY(4.7deg);
+                    transform-origin: right;
+                    .container{
+                        transform: skewY(-4.7deg);
+                    }
+                }
+                &.skew_right{
+                    transform: skewY(-4.7deg);
+                    transform-origin: left;
+                    .container{
+                        transform: skewY(4.7deg);
+                    }
+                }
+            }
+	    }
+	}
+    .container{
+        position: relative;
+    }
+    .contact_block{
+        @extend .bgimage;
+        padding-left: rem-calc(15);  
+        padding-right: rem-calc(15);  
+    	padding-top: rem-calc(33);  
+    	padding-bottom: rem-calc(33);  
+    	position: relative;
+    	overflow: hidden;
+    	margin-top: rem-calc(-152);
+        @include bp(tabletsm) {
+            margin-top: rem-calc(-110);
+        }
+    	.contact_block_overlay{
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		width: 100%;    		
+    		height: 100%;
+    		opacity: 0.77;
+    		mix-blend-mode: multiply;
+    	}
+        .contact_block_row{
+            [class*='col-']{
+                &:first-of-type{
+                    .address_block{
+                        &:before{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    	.address_block{    		
+    		padding: rem-calc(30 50);
+    		text-align: center;
+    		position: relative;
+            @include bp(lg) {
+                padding: rem-calc(30 0);
+            }            
+    		&:before{
+    			content: '';
+    			display: inline-block;    			
+    			width: rem-calc(1);
+    			height: rem-calc(84);
+    			position: absolute;
+    			top: 50%;
+    			left: rem-calc(-15);
+                @include bp(smmin) {
+        			-webkit-transform: translateY(-50%);
+        			-moz-transform: translateY(-50%);
+        			transform: translateY(-50%);
+                    border-left: solid rem-calc(1) rgba(255,255,255,0.1);
+                }
+                @include bp(tabletsm) {
+                    width: rem-calc(84);
+                    height: rem-calc(1);
+                    border-top: solid rem-calc(1) rgba(255,255,255,0.1);
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+    		}    		
+    		.address_title{
+    			color: $white;
+    			text-transform: uppercase;
+    			margin-bottom: rem-calc(17);
+    		}
+    		address{
+                margin-bottom: 0;  			
+	    		p{
+	    			color: $white;
+	    			a{
+	    				color: $white;
+	    			}
+                    &:last-of-type{
+                        margin-bottom: 0;
+                    }
+                    br{
+                        display: block;
+                    }
+	    		}
+	    		.address_label{
+	    			display: inline-block;
+	    			min-width: rem-calc(50);
+	    			margin-right: rem-calc(20);
+	    			text-align: left;
+                    @include bp(tabletmd) {
+                        min-width: rem-calc(40);
+                        margin-right: rem-calc(15);
+                    }
+	    		}
+    		}
+    	}
+    }
+}
+
+

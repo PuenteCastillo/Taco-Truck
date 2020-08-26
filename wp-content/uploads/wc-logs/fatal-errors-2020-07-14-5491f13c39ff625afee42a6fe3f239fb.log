@@ -1,0 +1,56 @@
+2020-07-14T21:28:49+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/template-parts/content-search.php on line 12
+
+2020-07-14T22:22:32+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_sub_field(), 0 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/modules/wysiwyg.php on line 17 and at least 1 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php:784
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/modules/wysiwyg.php(17): the_sub_field()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(725): require('/home/stagingpr...')
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(672): load_template('/home/stagingpr...', false)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/template-functions.php(215): get_template_part('/modules/wysiwy...')
+#5 /home/stagingproject in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 784
+
+2020-07-14T22:22:33+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_sub_field(), 0 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/modules/wysiwyg.php on line 17 and at least 1 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php:784
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/modules/wysiwyg.php(17): the_sub_field()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(725): require('/home/stagingpr...')
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(672): load_template('/home/stagingpr...', false)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/template-functions.php(215): get_template_part('/modules/wysiwy...')
+#5 /home/stagingproject in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 784
+
+2020-07-14T22:23:47+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_sub_field(), 0 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/modules/wysiwyg.php on line 17 and at least 1 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php:784
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/modules/wysiwyg.php(17): the_sub_field()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(725): require('/home/stagingpr...')
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(672): load_template('/home/stagingpr...', false)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/template-functions.php(215): get_template_part('/modules/wysiwy...')
+#5 /home/stagingproject in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 784
+
+2020-07-14T22:23:47+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_sub_field(), 0 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/modules/wysiwyg.php on line 17 and at least 1 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php:784
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/modules/wysiwyg.php(17): the_sub_field()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(725): require('/home/stagingpr...')
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(672): load_template('/home/stagingpr...', false)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/template-functions.php(215): get_template_part('/modules/wysiwy...')
+#5 /home/stagingproject in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 784
+
+2020-07-14T22:23:49+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_sub_field(), 0 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/modules/wysiwyg.php on line 17 and at least 1 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php:784
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/modules/wysiwyg.php(17): the_sub_field()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(725): require('/home/stagingpr...')
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(672): load_template('/home/stagingpr...', false)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/template-functions.php(215): get_template_part('/modules/wysiwy...')
+#5 /home/stagingproject in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 784
+
+2020-07-14T22:23:49+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_sub_field(), 0 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/modules/wysiwyg.php on line 17 and at least 1 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php:784
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/modules/wysiwyg.php(17): the_sub_field()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(725): require('/home/stagingpr...')
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(672): load_template('/home/stagingpr...', false)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/template-functions.php(215): get_template_part('/modules/wysiwy...')
+#5 /home/stagingproject in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 784
+

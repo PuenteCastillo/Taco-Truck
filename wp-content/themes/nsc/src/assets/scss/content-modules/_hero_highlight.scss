@@ -1,0 +1,170 @@
+/* Elan Hero || Hero highlight */
+.hero_highlight{
+    position: relative;
+    overflow: hidden;
+    @include bp(lg) {
+        height: auto;        
+    }
+    @include bp(height_bp) {
+        height: rem-calc(700);        
+    }
+    .hero_highlight_top{
+        @extend .bgimage;
+        height: 100vh;
+        height: calc(100vh + 430px);
+        @include bp(xl) {
+            height: 100vh;
+        }
+        @include bp(lg) {
+            height: 100vh;
+        }
+        @include bp(tabletmd) {
+            height: auto;
+            min-height: rem-calc(700);
+            padding-top: rem-calc(50);
+        }
+        @include bp(tabletsm) {            
+            min-height: rem-calc(400);
+        }
+        .overlay{
+            background: rgb(0,0,0);
+            background: -moz-linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%);
+            background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%);
+            background: linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+            opacity: 1;
+        }
+        .hero_highlight_title{
+            color: $white;
+            @include bp(mdmin) {
+                margin-top: 35%;                
+            }
+            h1{
+                font-size: rem-calc(105);
+                line-height: rem-calc(115);
+                @include bp(xl) {
+                    font-size: rem-calc(80);
+                    line-height: rem-calc(90);
+                }
+                @include bp(lg) {
+                    font-size: rem-calc(60);
+                    line-height: rem-calc(70);
+                }
+                @include bp(tabletmd) {
+                    font-size: rem-calc(60) !important;
+                    line-height: rem-calc(70) !important;
+                }
+                @include bp(tabletsm) {
+                    font-size: rem-calc(40) !important;
+                    line-height: rem-calc(50) !important;
+                }
+            }
+        }
+    }
+    .hero_highlight_middle{
+        padding-top: rem-calc(100);
+        padding-bottom: rem-calc(100);
+        position: relative;        
+        @include bp(tabletmd) {
+            padding-top: rem-calc(40);
+            padding-bottom: rem-calc(40);
+        }
+        .hero_highlight_skew{
+            background-color: $white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            bottom: rem-calc(-385);
+            left: 0;
+            transform: skewY(11deg);
+            transform-origin: right;
+            @include bp(xl) {
+                transform: skewY(8deg);
+            }
+            @include bp(tabletmd) {
+                transform: skewY(5deg);
+            }
+        }
+        .container{
+            position: relative;
+        }
+        .elan_google_row{
+            align-items: center;
+            margin-top: rem-calc(-430);
+            @include bp(xl) {
+                margin-top: rem-calc(-250);
+            }
+            @include bp(lg) {
+                margin-top: rem-calc(-200);
+            }
+            @include bp(tabletmd) {
+                margin-top: rem-calc(-150);
+            }
+            .elan_google_content{
+                padding-top: rem-calc(50);
+                @include bp(tabletmd) {
+                    padding-top: rem-calc(40);
+                }
+                @include bp(tabletsm) {
+                    padding-top: rem-calc(30);
+                }
+                @include bp(mdmin) {
+                    order: 1;
+                }
+                .hero_logo_title{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: rem-calc(30);
+                    img{
+                        margin-right: rem-calc(30);
+                        @include bp(xl) {
+                            max-height: rem-calc(70);
+                        }
+                        @include bp(lg) {
+                            max-height: rem-calc(60);
+                            margin-right: rem-calc(20);
+                        }
+                        @include bp(tabletmd) {
+                            max-height: rem-calc(42);
+                            margin-right: rem-calc(15);
+                        }
+                    }
+                    h2{                        
+                        margin-bottom: 0;
+                        @include bp(mdmin) {
+                            font-size: rem-calc(50);
+                            line-height: rem-calc(60);
+                        }
+                        @include bp(lgmin) {
+                            font-size: rem-calc(60);
+                            line-height: rem-calc(70);
+                        }
+                        @include bp(xlmin) {
+                            font-size: rem-calc(75);
+                            line-height: rem-calc(85);
+                        }   
+                    }
+                }
+            }
+            .elan_google_img{
+                @include bp(mdmin) {
+                    order: 2;
+                }
+                img{                    
+                    float: left;
+                    @include bp(xlmin) {
+                        max-width: initial;
+                    }
+                }
+            }
+        }
+        .link{
+            text-transform: uppercase;
+            @include bp(mdmin) {
+                font-size: rem-calc(20);
+                line-height: rem-calc(26);                
+            }
+        }
+    }    
+}

@@ -1,0 +1,99 @@
+.banner {    
+    @extend .bgimage;
+    height: calc(100vh - 75px);        
+    position: relative;
+    overflow: hidden;
+    @include bp(lg) {
+        height: auto;        
+    }
+    @include bp(height_bp) {
+        height: rem-calc(700);        
+    }
+    &.banner_sm{
+        min-height: rem-calc(400);
+        height: 100%;
+        display: flex;
+    }   
+    .container{
+        position: relative;
+    }
+    .banner_inner{
+        padding-bottom: 10%;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        @include bp(lg) {
+            padding-top: 25%;
+            padding-bottom: 10%;
+        } 
+        @include bp(tabletsm) {
+            padding-top: 35%;
+        }
+        @include bp(height_bp) {
+            padding-bottom: rem-calc(50);    
+        }
+        .banner_logo{
+            margin-bottom: auto;
+            position: fixed;
+            top: 0;
+            @include transition(5s, all, ease);
+            @include bp(lg) {
+                max-width: rem-calc(110);
+            }
+            @include bp(tabletmd) {
+                max-width: rem-calc(90);
+            }
+            @include bp(tabletsm) {
+                max-width: rem-calc(75);
+            }
+            a{
+                display: block;
+            }
+            &.slideUp{
+                animation: fadeOutUp 1s both;
+            }
+        }
+        .tagline {            
+            font-size: rem-calc(18);
+            line-height: rem-calc(24);
+            font-weight: $semibold;
+        }
+        h1, .h1{
+            color: $white;           
+        }
+    }    
+    .banner_video{
+        iframe{        
+            width: 100% !important;
+            height: 100% !important;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            -webkit-transform: scale(1.4);
+            -ms-transform: scale(1.4);
+            transform: scale(1.4);
+            object-fit: cover;
+        }
+    }
+    .overlay{                
+        opacity: 0.38;        
+    }
+    &.main_hero_banner{
+        overflow: hidden;
+        .banner_inner{
+            .banner_content{
+                margin-top: auto;            
+            }
+        }
+    }
+}
+
+@keyframes fadeOutUp {
+   0% {
+      transform: translateY(0);
+   }
+   100% {
+      transform: translateY(-100%);
+   }
+} 

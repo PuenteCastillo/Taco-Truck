@@ -1,0 +1,37 @@
+.about_us{
+    &.inner_spacing{
+		@include bp(lgmin) {
+			padding: rem-calc(70 0);
+		}		
+	}
+	h5{
+		color: $black;
+		font-weight: $bold;
+		letter-spacing: rem-calc(1);
+		padding-bottom: rem-calc(15);
+		position: relative;
+		&:before{				
+			content: '';
+			display: inline-block;
+			border-bottom: solid rem-calc(2);
+			width: rem-calc(70);
+			height: rem-calc(2);
+			position: absolute;
+			bottom: 0;
+			left: 0;				
+		}			
+	}
+	.border-right{
+		@include bp(tabletmd) {
+			border-right: none !important;
+			border-bottom: rem-calc(1) solid #dee2e6 !important;
+			padding-bottom: rem-calc(30);
+			margin-bottom: rem-calc(30);
+		}
+	}
+	.wide_column{		
+		h2{
+			color: $black;
+		}
+	}
+}

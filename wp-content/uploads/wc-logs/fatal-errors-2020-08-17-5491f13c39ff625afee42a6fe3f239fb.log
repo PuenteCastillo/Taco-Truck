@@ -1,0 +1,82 @@
+2020-08-17T20:30:48+00:00 CRITICAL Uncaught DivisionByZeroError: Modulo by zero in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/modules/split_highlight.php:6
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(732): require()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(676): load_template('/home/stagingpr...', false, Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/template-functions.php(216): get_template_part('/modules/split_...')
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/shortcodes.php(343): flex_modules(Array, '', 'flexmodules')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(flexmo...', 'do_shortcode_ta...', '[flexmodules na in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/modules/split_highlight.php on line 6
+
+2020-08-17T22:41:50+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function action_woocommerce_before_single_product(), 1 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php:327
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(287): action_woocommerce_before_single_product('')
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/templates/content-single-product.php(27): do_action('woocommerce_bef...')
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(732): require('/home/stagingpr...')
+#5 /home/stagingprojectpr/public_htm in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php on line 327
+
+2020-08-17T22:46:52+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function action_woocommerce_before_single_product(), 1 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php:327
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(287): action_woocommerce_before_single_product('')
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/templates/content-single-product.php(27): do_action('woocommerce_bef...')
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(732): require('/home/stagingpr...')
+#5 /home/stagingprojectpr/public_htm in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php on line 327
+
+2020-08-17T22:46:52+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function action_woocommerce_before_single_product(), 1 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php:327
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(287): action_woocommerce_before_single_product('')
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/templates/content-single-product.php(27): do_action('woocommerce_bef...')
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(732): require('/home/stagingpr...')
+#5 /home/stagingprojectpr/public_htm in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php on line 327
+
+2020-08-17T22:46:57+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function action_woocommerce_before_single_product(), 1 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php:327
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(287): action_woocommerce_before_single_product('')
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/templates/content-single-product.php(27): do_action('woocommerce_bef...')
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(732): require('/home/stagingpr...')
+#5 /home/stagingprojectpr/public_htm in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php on line 327
+
+2020-08-17T22:47:01+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function action_woocommerce_before_single_product(), 1 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php:327
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(287): action_woocommerce_before_single_product('')
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/templates/content-single-product.php(27): do_action('woocommerce_bef...')
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(732): require('/home/stagingpr...')
+#5 /home/stagingprojectpr/public_htm in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php on line 327
+
+2020-08-17T22:53:07+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function action_woocommerce_before_single_product(), 1 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php:327
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(287): action_woocommerce_before_single_product('')
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/templates/content-single-product.php(27): do_action('woocommerce_bef...')
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(732): require('/home/stagingpr...')
+#5 /home/stagingprojectpr/public_htm in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php on line 327
+
+2020-08-17T22:53:47+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function action_woocommerce_before_single_product(), 1 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php:327
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(287): action_woocommerce_before_single_product('')
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/templates/content-single-product.php(27): do_action('woocommerce_bef...')
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(732): require('/home/stagingpr...')
+#5 /home/stagingprojectpr/public_htm in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php on line 327
+
+2020-08-17T22:53:51+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function action_woocommerce_before_single_product(), 1 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php:327
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(287): action_woocommerce_before_single_product('')
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/templates/content-single-product.php(27): do_action('woocommerce_bef...')
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(732): require('/home/stagingpr...')
+#5 /home/stagingprojectpr/public_htm in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php on line 327
+

@@ -1,0 +1,154 @@
+.faq{
+    &.inner_spacing{
+		@include bp(lgmin) {
+			padding: rem-calc(70 0);
+		}		
+	}
+	.module_title{
+		margin-bottom: rem-calc(50);
+		@include bp(tabletmd) {
+			margin-bottom: rem-calc(40);	
+		}
+		@include bp(tabletsm) {
+			margin-bottom: rem-calc(30);
+		}
+		h2{
+			margin-bottom: 0;
+		}
+	}
+	.faq_simple_block{
+		.faq_content{
+			border-bottom: solid rem-calc(1) rgba(0,0,0,0.05);
+			padding-bottom: rem-calc(50);
+			margin-bottom: rem-calc(50);
+			@include bp(tabletmd) {
+				padding-bottom: rem-calc(40);
+				margin-bottom: rem-calc(40);	
+			}
+			@include bp(tabletsm) {
+				padding-bottom: rem-calc(30);
+				margin-bottom: rem-calc(30);
+			}
+			h5{
+				color: $black; 		
+				font-size: rem-calc(18);
+				line-height: rem-calc(24);
+			}
+			p{
+	            &:last-of-type{
+	                margin-bottom: 0;
+	            }
+	        }
+	        &:last-of-type{
+	        	margin-bottom: 0;
+	        }
+		}
+	}
+	.accordion{
+		.row{
+			[class*='col-']{
+				margin-bottom: rem-calc(24);
+				&:last-of-type{
+		        	margin-bottom: 0;
+		        }
+			}
+		}
+	}
+}
+
+/*Style 1*/
+.accordion{
+	font-family: $opensans;	
+	.card{
+		border: none;		
+		border-radius: 0;
+		background-color: $white;
+		@include box-shadow(0, 5px, 16px, 0, rgba(110,110,114,0.08));
+		margin-bottom: rem-calc(20);
+		@include bp(tabletsm) {
+			margin-bottom: rem-calc(15);
+		}
+		&:last-of-type{
+        	margin-bottom: 0;
+        }
+		.card-header{
+			background-color: transparent;
+			border-bottom: none;
+			a{
+				color: #6a7074;
+				font-size: rem-calc(14);
+				line-height: rem-calc(18);
+				font-weight: $bold;				
+				display: block;
+				padding: rem-calc(17 50 17 20);
+				.acco_icon{
+					position: absolute;
+					right: rem-calc(30);
+					font-size: rem-calc(10);					
+				}				
+				.fa-plus{
+					display: none;
+				}
+				.fa-minus{
+					display: block;
+				}
+				&.collapsed{
+					.fa-plus{
+						display: block;
+					}
+					.fa-minus{
+						display: none;
+					}
+				}
+			}
+		}
+		.card-body{
+			padding: rem-calc(15 20 16);
+			position: relative;
+			&:before{
+				content:'';
+				display: inline-block;
+				border-top: solid rem-calc(1) rgba(0,0,0,0.05);
+				height: rem-calc(1);
+				position: absolute;
+				top: 0;
+				left: rem-calc(5);
+				right: rem-calc(5);
+			}
+			p{
+				&:last-of-type{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+/*Style 2*/
+.accordion.style2{
+	.card{
+		background-color: transparent;
+		box-shadow: none;
+		border-bottom: solid rem-calc(1) rgba(0,0,0,0.1);
+		.card-header{			
+			border-bottom: none;
+			a{
+				color: #6a7074;
+				display: block;
+				font-size: rem-calc(14);
+				line-height: rem-calc(18);
+				font-weight: $bold;
+				padding: rem-calc(15 50 15 15);				
+			}
+		}
+		.card-body{
+			padding-top: 0;
+			&:before{
+				display: none;
+			}
+		}
+	}
+}
+.accordion.style2 > .card:not(:last-of-type) {
+	border-bottom: solid rem-calc(1) rgba(0,0,0,0.1);
+}

@@ -1,0 +1,94 @@
+@charset 'utf-8';
+
+@import 'bootstrap';
+
+
+/*
+  My custom styles:
+  Add your scss files below to structure your project styles
+*/
+
+
+/* // Global */
+@import "global/accessibility";
+@import "global/unit";
+@import "global/colors";
+@import "global/mixing";
+@import "global/variable";
+@import "global/fonts";
+
+
+
+/* // Modules */
+@import "modules/navigation";
+@import "modules/footer";
+@import "modules/menu";
+@import "modules/slick";
+@import "modules/slick-theme";
+@import "modules/all.min";
+@import "modules/fontawesome";
+@import "modules/magnific-popup";
+@import "modules/aos";
+
+/* //content-modules */
+@import "content-modules/modules_style";
+@import "content-modules/page_style";
+@import "content-modules/banner";
+@import "content-modules/large_gallery_masonry";
+@import "content-modules/launchpad";
+@import "content-modules/solutions";
+@import "content-modules/brands";
+@import "content-modules/blog_module";
+@import "content-modules/feature_service";
+@import "content-modules/feature_row";
+@import "content-modules/testimonial";
+@import "content-modules/awards";
+@import "content-modules/latest_news";
+@import "content-modules/related_products";
+@import "content-modules/images_3_col";
+@import "content-modules/icon_3_col";
+@import "content-modules/stacked_2_col";
+@import "content-modules/vertical_divider_list";
+@import "content-modules/products_2_col";
+@import "content-modules/featured_blocks";
+@import "content-modules/feature_details";
+@import "content-modules/call_to_action";
+@import "content-modules/feature_full_width";
+@import "content-modules/feature_overview";
+@import "content-modules/feature_column";
+@import "content-modules/marquee_modules";
+@import "content-modules/banner_cta";
+@import "content-modules/page_top_image";
+@import "content-modules/search_page";
+@import "content-modules/wysiwyg";
+@import "content-modules/feature_banner";
+@import "content-modules/partners";
+@import "content-modules/contact_banner";
+@import "content-modules/video_gallery";
+@import "content-modules/products";
+@import "content-modules/about_us";
+@import "content-modules/archive_blog";
+@import "content-modules/cta_simple";
+@import "content-modules/explore";
+@import "content-modules/faq";
+@import "content-modules/feature_spotlight";
+@import "content-modules/highlights_icons";
+@import "content-modules/quicklinks";
+@import "content-modules/grouped_links";
+@import "content-modules/hero_highlight";
+@import "content-modules/partners_header";
+@import "content-modules/footer_highlight";
+@import "content-modules/hero_image";
+@import "content-modules/split_highlight";
+@import "content-modules/leadership";
+
+
+@import "content-modules/brands2";
+@import "content-modules/contact_table";
+@import "content-modules/product_manuls";
+
+
+
+/* //content-pages */
+@import "content-modules/blog_page";
+@import "content-modules/contact_page";

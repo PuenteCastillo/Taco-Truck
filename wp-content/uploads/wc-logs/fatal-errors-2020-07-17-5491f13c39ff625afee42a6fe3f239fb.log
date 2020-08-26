@@ -1,0 +1,26 @@
+2020-07-17T16:47:15+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function show_pagination(), 0 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/index.php on line 34 and exactly 1 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/template-functions.php:286
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/index.php(34): show_pagination()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template-loader.php(106): include('/home/stagingpr...')
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-blog-header.php(19): require_once('/home/stagingpr...')
+#3 /home/stagingprojectpr/public_html/projects/nortek/index.php(17): require('/home/stagingpr...')
+#4 {main}
+  thrown in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/template-functions.php on line 286
+
+2020-07-17T16:49:49+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function show_pagination(), 0 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/index.php on line 34 and exactly 1 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/template-functions.php:286
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/index.php(34): show_pagination()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template-loader.php(106): include('/home/stagingpr...')
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-blog-header.php(19): require_once('/home/stagingpr...')
+#3 /home/stagingprojectpr/public_html/projects/nortek/index.php(17): require('/home/stagingpr...')
+#4 {main}
+  thrown in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/template-functions.php on line 286
+
+2020-07-17T16:50:09+00:00 CRITICAL Uncaught Error: Call to undefined function show_pagination() in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/index.php:34
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template-loader.php(106): include()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-blog-header.php(19): require_once('/home/stagingpr...')
+#2 /home/stagingprojectpr/public_html/projects/nortek/index.php(17): require('/home/stagingpr...')
+#3 {main}
+  thrown in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/index.php on line 34
+

@@ -1,0 +1,114 @@
+.divider_module{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.popup_video{
+	text-align: center;
+}
+
+.popup_video_inner{    
+    position: relative;
+    .video_wrap{
+    	padding-bottom: 56.5%;
+        position: relative; 
+        overflow: hidden;   
+        video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .mfp-close{
+        position: absolute;
+        top: rem-calc(-44);
+        right: 0;
+        &:hover, &:focus{
+            background-color: #f78e1e;
+        }
+    }    
+}
+
+.video_block{    
+    .popup_video_link, .wistia_embed, .popup_custom_video_link{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }    
+    .wistia_embed{ 
+        opacity: 0;               
+    }
+}
+
+.embed-responsive{
+    border-radius: rem-calc(10);
+    position: relative;  
+    #player{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }  
+    .embed_overlay{
+        background-color: rgba(0,0,0,0.49);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .embed_play_icon{
+        border-radius: 50%;
+        display: inline-block;
+        width: rem-calc(66);
+        height: rem-calc(66);
+        line-height: rem-calc(66);
+        text-align: center;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform-translate-xy(-50%, -50%);
+        @include bp(tabletmd) {
+            width: rem-calc(55);
+            height: rem-calc(55);
+            line-height: rem-calc(55);
+        }
+        @include bp(tabletsm) {
+            width: rem-calc(45);
+            height: rem-calc(45);
+            line-height: rem-calc(45);
+        }
+        i{
+            color: $white;
+            font-size: rem-calc(24);            
+            position: relative;
+            z-index: 1;
+            vertical-align: middle;
+            margin: 2px 0 0 2px;
+            @include transition(.5s, all, ease);
+            @include bp(tabletsm) {
+                font-size: rem-calc(18);
+            }
+        }
+    }
+}
+
+
+
+

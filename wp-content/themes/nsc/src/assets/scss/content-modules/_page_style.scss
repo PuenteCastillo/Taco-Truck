@@ -1,0 +1,22 @@
+.error-404.not-found{
+	#search-form{
+		display: flex;
+		@include bp(xsm) {
+			flex-wrap: wrap;
+		}
+		input[type="search"]{
+			margin-right: 3%;
+			@include bp(xsm) {				
+				margin-right: 0;
+			}
+		}
+		input[type="submit"].primary_btn{
+			@include bp(xsm) {
+				height: rem-calc(45);
+				margin-top: rem-calc(20);
+				width: 100%;
+			}
+		}
+	}
+}
+

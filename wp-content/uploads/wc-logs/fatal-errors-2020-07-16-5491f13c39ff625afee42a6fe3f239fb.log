@@ -1,0 +1,8 @@
+2020-07-16T18:42:46+00:00 CRITICAL Uncaught Error: Call to undefined function get_title() in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/index.php:38
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template-loader.php(106): include()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-blog-header.php(19): require_once('/home/stagingpr...')
+#2 /home/stagingprojectpr/public_html/projects/nortek/index.php(17): require('/home/stagingpr...')
+#3 {main}
+  thrown in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/index.php on line 38
+

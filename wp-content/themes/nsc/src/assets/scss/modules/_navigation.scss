@@ -1,0 +1,242 @@
+/*fdev*/
+
+.col-1{
+	background: green;
+}
+ul{
+	li{
+		position: relative;
+	}
+}
+
+@for $i from 1 through 8 {
+  .item-#{$i} { left: 20px * $i; } 
+}
+
+.site-brand{
+    width: 100%;
+	max-width: rem-calc(75);	
+}
+.site-header-main{
+    height: 100%;
+    .container{        
+        display: flex;
+        align-items: center;
+        @include bp(lgmin) {
+            padding-left: 0;
+            padding-right: 0;             
+        }       
+    }
+}
+
+.main-nav{
+    .menu-icon{
+        @include bp(lg) {
+            right:rem-calc(15px);
+        }
+        @include bp(tabletmd) {
+            right:rem-calc(10px);
+        }
+        @include bp(tabletsm) {
+            padding:rem-calc( 13px 9px 14px);
+            top: 51%;
+        }
+    }
+}
+
+.site-header {    
+    background:$white;
+    width: 100%;
+    z-index: 9;    
+    position: relative;
+    &.fixed_header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+               
+        @include transition(.1s, all, ease-in-out);
+    }
+    .main_header{
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+    }
+    .main-navigation{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        /*position: relative;*/
+    }
+}
+
+.header_search_bar{    
+    margin-left: rem-calc(30);
+    @include bp(lg) {
+        margin-left: rem-calc(15);
+    }
+    .search_btn{
+        color: #a1a1a1;
+        font-size: rem-calc(12);        
+        cursor: pointer;
+    }
+}
+.top_search_field{
+    background: rgba(0,0,0,0.96);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    display: none;
+    .container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .search_field_inner{
+        width: 100%;
+        max-width: rem-calc(770);
+        margin-left: auto;
+        margin-right: auto;
+        text-align: right;
+    }
+    .search_close_btn{        
+        border-radius: rem-calc(6);
+        display: inline-block;
+        width: rem-calc(50);
+        height: rem-calc(50);
+        line-height: rem-calc(50);
+        margin-bottom: rem-calc(50);
+        font-size: rem-calc(25);
+        color: $white;
+        text-align: center;    
+        padding: rem-calc(4 0);
+        @include bp(lg) {
+            margin-bottom: rem-calc(40);
+        } 
+        @include bp(tabletmd) {
+            width: rem-calc(40);
+            height: rem-calc(40);
+            line-height: rem-calc(40);
+            margin-bottom: rem-calc(30);
+        }
+        @include bp(tabletsm) {
+            width: rem-calc(30);
+            height: rem-calc(30);
+            line-height: rem-calc(30);
+            margin-bottom: rem-calc(20);
+            font-size: rem-calc(21);
+        }   
+        i{
+            vertical-align: middle;
+        }
+    }
+    .search_form{
+        width: 100%;
+        position: relative;
+        .ark-search-field-input {            
+            font-family:$glober;
+            font-weight: $normal;
+            font-size: rem-calc(30);
+            line-height:rem-calc(36);
+            color: $black;
+            background: $white;
+            width: 100%;
+            height: rem-calc(92);
+            border: 0;
+            box-shadow: none;
+            padding: rem-calc(18 80 10 40);
+            border-radius: rem-calc(10);
+            @include bp(tabletmd) {
+                font-size: rem-calc(24);
+                line-height:rem-calc(30);
+                height: rem-calc(80);
+                padding: rem-calc(18 65 10 30);
+            }
+            @include bp(tabletsm) {
+                font-size: rem-calc(18);
+                line-height:rem-calc(24);
+                height: rem-calc(60);
+                padding: rem-calc(18 50 10 20);
+            }
+        }
+        input::-webkit-input-placeholder{color: #a1a1a1;font-family:$glober;
+            font-weight: $normal;}
+        input::-moz-placeholder{color: #a1a1a1;font-family:$glober;
+            font-weight: $normal;}
+        input:-ms-input-placeholder{color: #a1a1a1;font-family:$glober;
+            font-weight: $normal;}
+        input:-moz-placeholder {color: #a1a1a1;font-family:$glober;
+            font-weight: $normal;}
+        /*button[type="submit"]{}*/
+        /*.search-submit{
+            background: none;
+            border: none;            
+            display:inline-block;
+            background:url(../images/search-icon.png) center no-repeat;
+            background-size: rem-calc(32);
+            width: rem-calc(32);
+            height: rem-calc(32);               
+        }*/
+        .search-submit{
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: rem-calc(32);
+            color: $black;
+            position: absolute;
+            top: 50%;
+            right: rem-calc(30);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);            
+            -webkit-appearance: none;
+            appearance: none;
+            @include bp(tabletmd) {
+                font-size: rem-calc(28);
+                right: rem-calc(20);
+            }
+            @include bp(tabletsm) {
+                font-size: rem-calc(24);
+                right: rem-calc(15);
+            }
+            @include bp(tabletsm) {
+                font-size: rem-calc(21);                
+            }
+            i{
+                vertical-align: middle;
+            }
+        }
+        input[type=search]::-webkit-search-cancel-button{             
+            display: none;            
+        }
+    }
+    
+}
+
+
+/* 
+{
+animation: slide-down 0.8s;
+animation-direction: normal;
+animation-duration: 0.8s; 
+}
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
+} 
+*/
+
+.menu-open{
+	overflow: hidden;
+}
+ 

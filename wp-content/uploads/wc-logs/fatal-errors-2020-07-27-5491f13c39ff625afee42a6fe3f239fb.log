@@ -1,0 +1,12 @@
+2020-07-27T21:20:00+00:00 CRITICAL Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/stagingprojectpr/public_html/projects/nortek/wp-includes/meta.php on line 964
+
+2020-07-27T21:20:07+00:00 CRITICAL Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/stagingprojectpr/public_html/projects/nortek/wp-includes/meta.php on line 964
+
+2020-07-27T21:37:42+00:00 CRITICAL Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/stagingprojectpr/public_html/projects/nortek/wp-includes/meta.php on line 964
+
+2020-07-27T21:52:04+00:00 CRITICAL Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/stagingprojectpr/public_html/projects/nortek/wp-includes/meta.php on line 964
+
+2020-07-27T21:55:41+00:00 CRITICAL Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/stagingprojectpr/public_html/projects/nortek/wp-includes/meta.php on line 960
+
+2020-07-27T22:37:14+00:00 CRITICAL Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/stagingprojectpr/public_html/projects/nortek/wp-includes/meta.php on line 964
+

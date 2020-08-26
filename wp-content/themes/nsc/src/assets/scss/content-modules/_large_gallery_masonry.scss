@@ -1,0 +1,217 @@
+ .large_gallery_masonry{
+    &.inner_spacing{
+		@include bp(lgmin) {
+			padding: rem-calc(70px 0 45);
+		}
+	}
+	.gallery_text_col{		
+		padding-bottom: rem-calc(28);		
+		@include bp(tabletsm) {
+			padding-bottom: rem-calc(20);			
+		}
+		.gallery_text_col_inner{
+			margin-bottom: rem-calc(30);
+			h5{
+				color: $black;
+				font-weight: $bold;
+				margin-bottom: rem-calc(20);				
+			}
+		}
+		[class*='col-']{
+			&:last-of-type{
+				.gallery_text_col_inner{
+					@include bp(tabletsm) {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		@include bp(lgmin) {			
+			[class*='col-']{
+				&.col-lg-6{
+					.gallery_text_col_inner{
+						max-width: 90%;
+					}
+					&:nth-child(even){					
+						.gallery_text_col_inner{						
+							margin-left: auto;
+						}
+					}
+				}
+				&.col-lg-4{
+					.gallery_text_col_inner{					
+						max-width: 90%;					
+					}
+					&:nth-child(even){
+						.gallery_text_col_inner{
+							margin-left: auto;
+							margin-right: auto;
+						}
+					}
+				}
+			}
+		}
+	}
+	.masonry_filter_menu{
+		padding-top: rem-calc(36);
+		margin-bottom: rem-calc(40);
+		text-align: center;
+		margin-left: 0;
+		@include bp(tabletmd) {
+			padding-top: rem-calc(30);
+			margin-bottom: rem-calc(30);
+		}
+		@include bp(tabletsm) {
+			padding-top: rem-calc(20);
+			margin-bottom: rem-calc(20);
+		}
+		li{			
+			display: inline-block;
+			padding: rem-calc(0 15);
+			@include bp(tabletsm) {
+				padding: rem-calc(0 10);
+			}
+			@include bp(xsm) {
+				display: block;
+				border-bottom: solid rem-calc(1) #e7e7e7;
+				margin-bottom: 0;
+				&:last-of-type{
+					border-bottom: none;
+				}				
+			}
+			&:before{
+				display: none;
+			}
+			a{
+				display: block;
+				line-height: 21px;
+				font-weight: $bold;
+				color: #a1a1a1;
+				padding: rem-calc(2 6);
+				border-bottom: solid rem-calc(1);
+				border-bottom-color: transparent;
+				text-transform: uppercase;
+				@include bp(xsm) {
+					border-bottom: none;
+					padding: rem-calc(15 6 10);
+				}
+				&:hover{
+					/*color: #f78e1e;*/
+				}
+				&.active{
+					/*color: #f78e1e;
+					border-bottom-color: #f78e1e;*/					
+				}
+			}
+		}
+	}
+	.grid{	
+		display: block;
+		margin-left: rem-calc(-15);
+		margin-right: rem-calc(-15);
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.grid-item, .grid-sizer {	
+			width: 25%;
+			height: 267px;				
+			float: left;  		
+			position: relative;
+			margin-bottom: 25px;
+			@include bp(lg) {
+				height: rem-calc(216);
+			}
+			@include bp(tabletmd) {
+				width: 50%;
+				height: rem-calc(227);
+			}
+			@include bp(sm) {
+				width: 100%;
+			}
+			&.grid-item--width2{
+				width: 50%;			
+				@include bp(tabletsm) {
+					width: 100%;
+				}
+			}
+			&.grid-item--height2{
+				height: rem-calc(559);
+				@include bp(lg) {
+					height: rem-calc(456);
+				}
+				@include bp(tabletmd) {
+					height: rem-calc(480);
+				}
+				@include bp(tabletsm) {
+					height: rem-calc(420);
+				}
+			}
+			.grid-item-block{
+				@extend .bgimage;
+				background-color: #c0c0c0;
+				position: absolute;
+				top: 0; 
+				right: 12px; 
+				bottom: 0; 
+				left: 12px;
+				display: block;
+				border-radius: 10px;			
+				font-size: 20px;
+				line-height: 1.5;
+				color: $white;
+				overflow: hidden;
+				.overlay{
+					position: absolute;
+					top: 0; 
+					right: 0; 
+					bottom: 0; 
+					left: 0;
+					display: flex;
+					align-items: flex-end;
+					padding: rem-calc(10 30);
+					opacity: 0;
+					mix-blend-mode: inherit;
+					@include transition(.5s, all, ease);
+				}
+				&:hover{
+					.overlay{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	} 
+}
+
+
+
+
+
+.large_gallery_masonry.small_gallery_masonry{
+	.module_title{		
+		margin-bottom: rem-calc(10);		
+		h5{		
+			color: #f78e1e;
+			font-weight: $bold;
+			letter-spacing: rem-calc(1);
+			margin-bottom: rem-calc(28);
+		}
+		h2{
+			color: #333333;
+			@include bp(mdmin) {
+				font-size: rem-calc(40);
+				line-height: rem-calc(50);
+			}
+			@include bp(lgmin) {
+				font-size: rem-calc(50);
+				line-height: rem-calc(60);
+			}
+		}
+	}	
+	.masonry_filter_menu{
+		padding-top: rem-calc(15);
+		margin-bottom: rem-calc(12);
+	}
+}

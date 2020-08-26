@@ -1,0 +1,97 @@
+.feature_banner {    
+    .feature_banner_inner{
+        position: relative;
+        overflow: hidden;
+        &.inner_spacing{            
+            padding: rem-calc(214 0) !important;
+            @include bp(tabletmd) {
+                padding: rem-calc(140 0) !important;
+            }
+            @include bp(tabletsm) {
+                padding: rem-calc(110 0) !important;
+            }
+        }
+        &.left{
+            text-align: left;
+        }
+        &.center{
+            text-align: center;
+        }
+        &.right{
+            text-align: right;
+        }
+    }
+    .feature_banner_bg{
+        @extend .bgimage;        
+        position: absolute;            
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        &.skew{        
+            &.skew_left{
+                transform: skewY(4.7deg);
+                transform-origin: right;
+                .container{
+                    transform: skewY(-4.7deg);
+                }
+            }
+            &.skew_right{
+                transform: skewY(-4.7deg);
+                transform-origin: left;
+                .container{
+                    transform: skewY(4.7deg);
+                }
+            }
+        }
+    }
+    .container{
+        position: relative;
+    }
+    
+    .module_title{
+        h2{
+            color: $white;
+        }
+        .sub_header{
+            font-weight: $bold;
+            text-transform: uppercase;
+        }
+    }
+    .feature_middle{
+        max-width: rem-calc(970);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: rem-calc(-150); 
+        @include bp(tabletmd) {
+            margin-top: rem-calc(-120); 
+        }
+        @include bp(tabletsm) {
+            margin-top: rem-calc(-80); 
+        }       
+        .feature_middle_image{
+            @extend .bgimage;
+            padding-bottom: 62.2%;
+        }
+        .feature_video{
+            padding-bottom: 56.5%;
+            position: relative;
+            overflow: hidden;            
+            video{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            iframe{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+

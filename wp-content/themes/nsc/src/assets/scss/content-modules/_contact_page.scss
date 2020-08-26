@@ -1,0 +1,52 @@
+.contact_form{
+	.module_title{
+		text-align: center;
+		margin-bottom: rem-calc(43);
+		h5{
+			letter-spacing: rem-calc(1.5);
+			font-weight: $bold;
+		}
+	}	
+	form.wpcf7-form{
+		@include bp(lgmin) {
+			margin-left: rem-calc(-10);
+			margin-right: rem-calc(-10);		
+		}		
+	}
+}
+form.wpcf7-form{
+	.wpcf7-form-control-wrap{
+		display: block;
+		margin-bottom: rem-calc(30);
+		@include bp(tabletmd) {
+			margin-bottom: rem-calc(20);
+		}
+		@include bp(tabletsm) {
+			margin-bottom: rem-calc(15);
+		}
+	}	
+	.wpcf7-form-control{
+		height: rem-calc(56);
+		border-radius: rem-calc(12);
+		border-color: #dfdfdf;
+		@include bp(tabletmd) {
+			height: rem-calc(50);
+		}
+		@include bp(tabletsm) {
+			height: rem-calc(45);
+		}
+		&.wpcf7-textarea{
+			height: rem-calc(140);
+			resize: none;
+		}
+		&.wpcf7-submit{
+			&.submit_btn{
+				height: rem-calc(50);
+				background: transparent;
+				font-weight: $bold;				
+				border-width: rem-calc(2);				
+				letter-spacing: rem-calc(0.7);				
+			}
+		}
+	}
+}

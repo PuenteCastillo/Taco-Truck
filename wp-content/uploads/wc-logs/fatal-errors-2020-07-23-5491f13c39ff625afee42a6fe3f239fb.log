@@ -1,0 +1,89 @@
+2020-07-23T20:37:45+00:00 CRITICAL Uncaught Error: Call to a member function to_array() on null in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/contact-form-7/includes/rest-api.php:374
+Stack trace:
+#0 [internal function]: {closure}(Object(WPCF7_FormTag))
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/contact-form-7/includes/rest-api.php(378): array_map(Object(Closure), Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/contact-form-7/includes/rest-api.php(232): wpcf7_get_properties_for_api(Object(WPCF7_ContactForm))
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/rest-api/class-wp-rest-server.php(1015): wpcf7_rest_update_contact_form(Object(WP_REST_Request))
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/rest-api/class-wp-rest-server.php(342): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#5 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/rest-api.php(312): WP_REST_Server->serve_request('/contact-form-7...')
+# in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/contact-form-7/includes/rest-api.php on line 374
+
+2020-07-23T20:39:18+00:00 CRITICAL Uncaught Error: Call to a member function to_array() on null in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/contact-form-7/includes/rest-api.php:374
+Stack trace:
+#0 [internal function]: {closure}(Object(WPCF7_FormTag))
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/contact-form-7/includes/rest-api.php(378): array_map(Object(Closure), Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/contact-form-7/includes/rest-api.php(232): wpcf7_get_properties_for_api(Object(WPCF7_ContactForm))
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/rest-api/class-wp-rest-server.php(1015): wpcf7_rest_update_contact_form(Object(WP_REST_Request))
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/rest-api/class-wp-rest-server.php(342): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#5 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/rest-api.php(312): WP_REST_Server->serve_request('/contact-form-7...')
+# in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/contact-form-7/includes/rest-api.php on line 374
+
+2020-07-23T22:24:22+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_get_related_products(), 0 passed in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php on line 245 and at least 1 expected in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/includes/wc-product-functions.php:876
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php(245): wc_get_related_products()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(285): action_woocommerce_after_single_product()
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/templates/content-single-product.php(76): do_action('woocommerce_aft...')
+#5 /home/ in /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/includes/wc-product-functions.php on line 876
+
+2020-07-23T22:40:15+00:00 CRITICAL Uncaught Error: Call to undefined function setup_postdate() in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php:249
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(285): action_woocommerce_after_single_product()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/templates/content-single-product.php(76): do_action('woocommerce_aft...')
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(725): require('/home/stagingpr...')
+#5 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/includes/wc-core-functions.php(283): load_template('/home/stagingpr...', false)
+#6 /home/stagingprojectpr/public_html/projects/ in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php on line 249
+
+2020-07-23T22:56:12+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php:263
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(285): action_woocommerce_after_single_product()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/templates/content-single-product.php(76): do_action('woocommerce_aft...')
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(725): require('/home/stagingpr...')
+#5 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/includes/wc-core-functions.php(283): load_template('/home/stagingpr...', false)
+#6 /home/stagingprojectpr/public_html/projects/n in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php on line 263
+
+2020-07-23T23:00:03+00:00 CRITICAL Uncaught Error: Call to a member function get_sku() on bool in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php:261
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(285): action_woocommerce_after_single_product()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/templates/content-single-product.php(76): do_action('woocommerce_aft...')
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(725): require('/home/stagingpr...')
+#5 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/includes/wc-core-functions.php(283): load_template('/home/stagingpr...', false)
+#6 /home/stagingprojectpr/public_html/projects/ in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php on line 261
+
+2020-07-23T23:02:26+00:00 CRITICAL Uncaught Error: Call to a member function get_sku() on bool in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php:261
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(285): action_woocommerce_after_single_product()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/templates/content-single-product.php(76): do_action('woocommerce_aft...')
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(725): require('/home/stagingpr...')
+#5 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/includes/wc-core-functions.php(283): load_template('/home/stagingpr...', false)
+#6 /home/stagingprojectpr/public_html/projects/ in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php on line 261
+
+2020-07-23T23:02:31+00:00 CRITICAL Uncaught Error: Call to a member function get_sku() on bool in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php:261
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(285): action_woocommerce_after_single_product()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/templates/content-single-product.php(76): do_action('woocommerce_aft...')
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(725): require('/home/stagingpr...')
+#5 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/includes/wc-core-functions.php(283): load_template('/home/stagingpr...', false)
+#6 /home/stagingprojectpr/public_html/projects/ in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php on line 261
+
+2020-07-23T23:03:17+00:00 CRITICAL Uncaught Error: Call to a member function get_sku() on bool in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php:261
+Stack trace:
+#0 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(285): action_woocommerce_after_single_product()
+#1 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/templates/content-single-product.php(76): do_action('woocommerce_aft...')
+#4 /home/stagingprojectpr/public_html/projects/nortek/wp-includes/template.php(725): require('/home/stagingpr...')
+#5 /home/stagingprojectpr/public_html/projects/nortek/wp-content/plugins/woocommerce/includes/wc-core-functions.php(283): load_template('/home/stagingpr...', false)
+#6 /home/stagingprojectpr/public_html/projects/ in /home/stagingprojectpr/public_html/projects/nortek/wp-content/themes/nsc/inc/woocommerce.php on line 261
+

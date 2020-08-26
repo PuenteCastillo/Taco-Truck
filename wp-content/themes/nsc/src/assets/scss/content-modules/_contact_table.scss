@@ -1,0 +1,78 @@
+.contact_table {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	overflow: hidden;
+	h4 {
+		font-weight: normal;
+		font-size: 20px;
+		text-align: left;
+		color: #a1a1a1;
+		margin-bottom: 0;
+	}
+	p {
+		font-weight: normal;
+		font-size: 15px;
+		text-align: left;
+		// line-height: 0;
+		margin-bottom: 0;
+		color: #a1a1a1;
+	}
+	.header {
+		padding-bottom: 10px !important;
+		border-bottom: 1px solid #cdcdcd;
+		margin-bottom: 40px;
+
+		.set-height {
+			min-height: 50px;
+		}
+
+		.possition {
+			margin-top: -3px;
+			margin-bottom: 5px;
+		}
+		.download {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+	}
+	.content-block-one {
+		padding: 20px;
+		max-width: 315px;
+	}
+	.content-block-two {
+		padding: 20px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		border-bottom: 1px solid #cdcdcd;
+		max-width: 315px;
+	}
+	.white-text {
+		p,
+		h4 {
+			color: white;
+		}
+	}
+	.black-text {
+		color: black;
+		p,
+		h4 {
+			color: black;
+		}
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.download {
+		position: relative !important;
+		width: 100vw;
+		padding-top: 25px !important;
+		display: flex;
+	}
+	.content-block-one {
+		max-width: 100% !important;
+	}
+	.content-block-two {
+		max-width: 100% !important;
+	}
+}
